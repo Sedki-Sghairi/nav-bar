@@ -181,7 +181,21 @@ nav {
 	font-size: 1rem;
 	color: #263238;
 }
-
+.sedki::after {
+	position: relative;
+	content: "Full Stack Web-Dev";
+	display: block;
+	font-family: 'Teko', sans-serif;
+	font-weight: 400;
+	font-size: 9px;
+	padding: 0;
+	letter-spacing: 5px;
+	top: -.8rem;
+	z-index: -1;
+	left: 2px;
+	color: #29b6f6;
+	text-shadow: -2px 0px 4px #000;
+}
 #logo {
 	margin: 0;
 	padding: .5rem;
