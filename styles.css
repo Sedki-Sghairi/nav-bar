@@ -188,12 +188,11 @@ nav {
 }
 .sedki::after {
 	position: relative;
-	content: "full stack web-dev";
+	content: "full Stack Web-Dev";
 	display: block;
 	font-family: 'Teko', sans-serif;
 	font-weight: 400;
-	font-size: 10px;
-	padding: 0;
+	font-size: 9px;
 	letter-spacing: 5px;
 	top: -.8rem;
 	z-index: -1;
@@ -201,11 +200,9 @@ nav {
 	color: #29b6f6;
 	text-shadow: -2px 0px 4px #000;
 }
-a {
+#logo {
 	padding: 0 1rem;
-	display: inline-block;
 	color: #29b6f6;
-	text-decoration: none;
 	overflow: hidden;
 	transition: 0.2s;
 }
@@ -226,6 +223,7 @@ a {
 	height: 2px;
 	background: linear-gradient(90deg, transparent, #29b6f6);
 	animation: animate1 1s linear 5;
+	-webkit-animation: animate1 1s linear 5;
 }
 @keyframes animate1 {
 	0% {
@@ -236,6 +234,15 @@ a {
 		left: 100%;
 	}
 }
+@-webkit-keyframes animate1 {
+	0% {
+		-webkit-left: -100%;
+	}
+	50%,
+	100% {
+		-webkit-left: 100%;
+	}
+}
 #logo span:nth-child(2) {
 	top: -100%;
 	right: 0;
@@ -243,6 +250,7 @@ a {
 	height: 100%;
 	background: linear-gradient(180deg, transparent, #29b6f6);
 	animation: animate2 1s linear 5;
+	-webkit-animation: animate2 1s linear 5;
 	animation-delay: .25s;
 }
 @keyframes animate2 {
@@ -254,6 +262,15 @@ a {
 		top: 100%;
 	}
 }
+@-webkit-keyframes animate2 {
+	0% {
+		-webkit-top: -100%;
+	}
+	50%,
+	100% {
+		-webkit-top: 100%;
+	}
+}
 #logo span:nth-child(3) {
 	bottom: 0;
 	right: -100%;
@@ -261,6 +278,7 @@ a {
 	height: 2px;
 	background: linear-gradient(270deg, transparent, #29b6f6);
 	animation: animate3 1s linear 5;
+	-webkit-animation: animate3 1s linear 5;
 	animation-delay: .5s;
 }
 @keyframes animate3 {
@@ -272,6 +290,15 @@ a {
 		right: 100%;
 	}
 }
+@-webkit-keyframes animate3 {
+	0% {
+		-webkit-right: -100%;
+	}
+	50%,
+	100% {
+		-webkit-right: 100%;
+	}
+}
 #logo span:nth-child(4) {
 	bottom: -100%;
 	left: 0;
@@ -279,6 +306,7 @@ a {
 	height: 100%;
 	background: linear-gradient(360deg, transparent, #29b6f6);
 	animation: animate4 1s linear 5;
+	-webkit-animation: animate4 1s linear 5;
 	animation-delay: .75s;
 }
 @keyframes animate4 {
@@ -288,5 +316,14 @@ a {
 	50%,
 	100% {
 		bottom: 100%;
+	}
+}
+@-webkit-keyframes animate4 {
+	0% {
+		-webkit-bottom: -100%;
+	}
+	50%,
+	100% {
+		-webkit-bottom: 100%;
 	}
 }
