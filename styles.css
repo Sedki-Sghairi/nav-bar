@@ -111,9 +111,6 @@ nav {
 	color: hsl(205, 86%, 17%);
 	transform: rotate(90deg);
 }
-.logo {
-	height: 40px;
-}
 .links a {
 	color: hsl(209, 34%, 30%);
 	font-size: 1rem;
@@ -176,5 +173,120 @@ nav {
 	}
 	.social-icons a:hover {
 		color: hsl(205, 90%, 76%);
+	}
+}
+/* navlogo */
+.sedki {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1rem;
+	color: #263238;
+	margin-bottom: 0;
+	z-index: 10;
+	position: relative;
+	top: .5rem;
+	margin-top: 0;
+}
+.sedki::after {
+	position: relative;
+	content: "full stack web-dev";
+	display: block;
+	font-family: 'Teko', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	padding: 0;
+	letter-spacing: 5px;
+	top: -.8rem;
+	z-index: -1;
+	left: 2px;
+	color: #29b6f6;
+	text-shadow: -2px 0px 4px #000;
+}
+a {
+	padding: 0 1rem;
+	display: inline-block;
+	color: #29b6f6;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+}
+#logo:nth-child(1) {
+	filter: hue-rotate(290deg);
+}
+#logo:nth-child(3) {
+	filter: hue-rotate(110deg);
+}
+#logo span {
+	position: absolute;
+	display: block;
+}
+#logo span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #29b6f6);
+	animation: animate1 1s linear 5;
+}
+@keyframes animate1 {
+	0% {
+		left: -100%;
+	}
+	50%,
+	100% {
+		left: 100%;
+	}
+}
+#logo span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #29b6f6);
+	animation: animate2 1s linear 5;
+	animation-delay: .25s;
+}
+@keyframes animate2 {
+	0% {
+		top: -100%;
+	}
+	50%,
+	100% {
+		top: 100%;
+	}
+}
+#logo span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #29b6f6);
+	animation: animate3 1s linear 5;
+	animation-delay: .5s;
+}
+@keyframes animate3 {
+	0% {
+		right: -100%;
+	}
+	50%,
+	100% {
+		right: 100%;
+	}
+}
+#logo span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #29b6f6);
+	animation: animate4 1s linear 5;
+	animation-delay: .75s;
+}
+@keyframes animate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,
+	100% {
+		bottom: 100%;
 	}
 }
