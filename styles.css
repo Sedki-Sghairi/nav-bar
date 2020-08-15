@@ -46,7 +46,7 @@ p {
 	margin-bottom: 1.25rem;
 	color: hsl(210, 22%, 49%);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 860px) {
 	h1 {
 		font-size: 4rem;
 	}
@@ -136,7 +136,7 @@ nav {
 .show-links {
 	height: 10rem;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 860px) {
 	.section-center {
 		max-width: 1170px;
 		margin: 0 auto;
@@ -180,28 +180,12 @@ nav {
 	font-family: 'Orbitron', sans-serif;
 	font-size: 1rem;
 	color: #263238;
-	margin-bottom: 0;
-	z-index: 10;
-	position: relative;
-	top: .5rem;
-	margin-top: 0;
 }
-.sedki::after {
-	position: relative;
-	content: "full Stack Web-Dev";
-	display: block;
-	font-family: 'Teko', sans-serif;
-	font-weight: 400;
-	font-size: 9px;
-	letter-spacing: 5px;
-	top: -.8rem;
-	z-index: -1;
-	left: 2px;
-	color: #29b6f6;
-	text-shadow: -2px 0px 4px #000;
-}
+
 #logo {
-	padding: 0 1rem;
+	margin: 0;
+	padding: .5rem;
+	padding-bottom: 0;
 	color: #29b6f6;
 	overflow: hidden;
 	transition: 0.2s;
